@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'bg-hero': "url('../assets/images/main.jpg')",
+      },
+
       fontFamily: {
         sans: 'var(--font-poppins)',
         alt: 'var(--font-ubunto)',

@@ -2,10 +2,10 @@ import './globals.css'
 import { Poppins, Ubuntu } from 'next/font/google'
 import React from 'react'
 
-const poppins300 = Poppins({
+const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
-  weight: ['300'],
+  weight: ['300', '400', '500'],
 })
 const ubunto = Ubuntu({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins300.variable} ${ubunto.variable} bg-gray-50 font-sans`}
+        className={`${poppins.variable} ${ubunto.variable} bg-gray-50 font-sans`}
       >
         {children}
       </body>
