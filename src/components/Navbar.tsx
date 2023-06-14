@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { X, AlignJustify } from 'lucide-react'
 import Image from 'next/image'
 import logo from '../app/icon.png'
+import Link from 'next/link'
 
 export function Navbar() {
   const [nav, setnav] = useState(false)
@@ -16,29 +17,29 @@ export function Navbar() {
       <Image src={logo} alt="Logo Sertão de Deus" width={50} height={50} />
       <ul className="hidden whitespace-nowrap md:flex">
         <li className="p-4">
-          <a href="#" className="hover:text-yellow-500">
+          <Link href={'/'} className="hover:text-yellow-500">
             Home
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a href="#" className="hover:text-yellow-500">
-            Quem Somos?
-          </a>
+          <Link href={'/quemSomos'} className="hover:text-yellow-500">
+            Quem somos?
+          </Link>
         </li>
         <li className="p-4">
-          <a href="#" className="hover:text-yellow-500">
+          <Link href={'/projetos'} className="hover:text-yellow-500">
             Projetos
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a href="#" className="hover:text-yellow-500">
-            Como ajudar?
-          </a>
+          <Link href={'/comoAjudar'} className="hover:text-yellow-500">
+            Como Ajudar?
+          </Link>
         </li>
         <li className="p-4">
-          <a href="#" className="hover:text-yellow-500">
+          <Link href={'/contato'} className="hover:text-yellow-500">
             Contato
-          </a>
+          </Link>
         </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
@@ -56,29 +57,29 @@ export function Navbar() {
         </h1>
         <ul className="text-base uppercase">
           <li className="p-4">
-            <a href="#" className="hover:text-yellow-500">
+            <Link href={'/'} className="hover:text-yellow-500">
               Home
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a href="#" className="hover:text-yellow-500">
+            <Link href={'/quemSomos'} className="hover:text-yellow-500">
               Quem somos?
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a href="#" className="hover:text-yellow-500">
+            <Link href={'/projetos'} className="hover:text-yellow-500">
               Projetos
-            </a>
+            </Link>
           </li>
           <li className="p-4">
-            <a href="#" className="hover:text-yellow-500">
-              Como ajudar?
-            </a>
+            <Link href={'/comoAjudar'} className="hover:text-yellow-500">
+              Como Ajudar?
+            </Link>
           </li>
           <li className="p-4">
-            <a href="#" className="hover:text-yellow-500">
+            <Link href={'/contato'} className="hover:text-yellow-500">
               Contato
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

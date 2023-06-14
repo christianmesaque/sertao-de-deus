@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bg-hero': "url('../assets/images/main.jpg')",
+        'bg-mission': "url('../assets/images/principal2.jpg')",
       },
 
       fontFamily: {
